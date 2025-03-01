@@ -1,6 +1,5 @@
 // Method 1:  using nested loops
 function sumZero(arr) {
-  let sumZeroNums = [];
   for (let i = 0; i < arr.length; i++) {
     for (let j = i + 1; j < arr.length; j++) {
       if (arr[i] + arr[j] === 0) {
@@ -23,6 +22,6 @@ function sumToZero(arr) {
     }
   }
 }
-console.log(sumToZero([-3, -2, -1, 0, 1, 2, 3]));
-console.log(sumToZero([-4, -2, 0, 2, 5]));
-console.log(sumZero([1, 2, 3, 4]));
+console.log(sumToZero([-3, -2, -1, 0, 1, 2, 3])); //[-3, 3]
+console.log(sumToZero([-4, -2, 0, 2, 5])); //[-2, 2]
+console.log(sumZero([1, 2, 3, 4])); //undefined
